@@ -1,7 +1,9 @@
 import React from "react";
 
-export default function search() {
-    return (
-        <div>Search</div>
-    );
+export default function search(props) {
+  return (
+    <div>
+      <input type="text" placeholder="Search Employee" onChange={props.onChange}></input>
+    </div>
+  );
 }
